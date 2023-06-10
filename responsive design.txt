@@ -1,0 +1,5 @@
+responsive design
+
+- dont specify height or width, instead introduce padding and margin
+
+when working on responsive design, work on each individual section instead of tryin to make everything responsive

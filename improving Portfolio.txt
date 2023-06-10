@@ -1,0 +1,7 @@
+improving Portfolio
+
+include SVG icons:
+
+Hover: change icon to respective logo colour
+
+nav bar: background-image: linear-gradient( #fb6f92, pink,violet);
