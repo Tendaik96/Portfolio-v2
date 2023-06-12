@@ -33,7 +33,7 @@ NAVIGATION
 header{
     display: flex;
     justify-content: space-between;
-    height: 80px;
+    height: 70px;
     width: 100%;
     position: fixed;
     background-image: linear-gradient(rgba(251, 111, 146, 0.5), rgba(255, 192, 203,0.5), rgba(238, 130, 238,0.5));
@@ -347,8 +347,8 @@ section {
     
    
 
-    >input {
-        
+    > input {
+        clip: rect(1px, 1px, 1px, 1px);
         clip-path: inset(50%);
         height: 1px;
         width: 1px;
@@ -356,47 +356,30 @@ section {
         overflow: hidden;
         padding: 0;
         position: absolute;
+        
 
-        &:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
-                margin-left: -285%;
-            }
+        &:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -370%; }
+        &:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -283%; }
+        &:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -182%; }
+        &:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -70%; }
+        &:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 30%; }
+        
+        &:nth-of-type(1):checked ~ .carousel__thumbnails li:nth-of-type(1) { box-shadow: 0px 0px 0px 5px violet; }
+        &:nth-of-type(2):checked ~ .carousel__thumbnails li:nth-of-type(2) { box-shadow: 0px 0px 0px 5px violet; }
+        &:nth-of-type(3):checked ~ .carousel__thumbnails li:nth-of-type(3) { box-shadow: 0px 0px 0px 5px violet; }
+        &:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) { box-shadow: 0px 0px 0px 5px violet; }
+        &:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 5px violet; }
 
-        &:nth-of-type(3):checked~.carousel__slides .carousel__slide:first-of-type {
-            margin-left: -175%;
-        }
+    }
 
-        &:nth-of-type(2):checked~.carousel__slides .carousel__slide:first-of-type {
-            margin-left: -66%;
-        }
+    }
 
-        &:nth-of-type(1):checked~.carousel__slides .carousel__slide:first-of-type {
-            margin-left: 30%;
-        }
-
-        &:nth-of-type(1):checked~.carousel__thumbnails li:nth-of-type(1) {
-            box-shadow: 0px 0px 0px 5px violet;
-        }
-
-        &:nth-of-type(2):checked~.carousel__thumbnails li:nth-of-type(2) {
-            box-shadow: 0px 0px 0px 5px violet;
-        }
-
-        &:nth-of-type(3):checked~.carousel__thumbnails li:nth-of-type(3) {
-            box-shadow: 0px 0px 0px 5px violet;
-        }
-
-                &:nth-of-type(4):checked~.carousel__thumbnails li:nth-of-type(4) {
-                    box-shadow: 0px 0px 0px 5px violet;
-                }
-
-    }}
-
-    #cinemate, #gem{
+    #cinemate, #gem, #dictionary{
         height: 60vh;
         margin-bottom: 50px;
     }
     
-    #cinemate-container, #gem-container{
+    #cinemate-container, #gem-container, #dictionary-container{
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -406,7 +389,7 @@ section {
         
     }
 
-    #cinemate-description, #gem-description{
+    #cinemate-description, #gem-description, #dictionary-description{
         max-width: 700px;
         margin-left: 30px;
     }
@@ -420,10 +403,17 @@ section {
             height: 2em;
             width: 5em;
             border-radius: 15px;
+            
         }
 
         .buttons{
-            z-index: 5;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            z-index: 50;
+            margin-top: -20px;
+            
+            
         }
     
         .live {
@@ -448,7 +438,7 @@ section {
                flex-wrap: wrap;
                justify-content: center;
                gap: 3px;
-               margin: 5px 0;
+               margin: 10px 0;
            }
     
         .stack-labels>p {
@@ -476,6 +466,7 @@ section {
            margin-top: 30px;
            text-align: center;
             align-items: center;
+            
            
         }
 
@@ -491,7 +482,7 @@ section {
             }
 
         #TeaCozy{
-        width: 60%;
+        width: 40%;
             height: auto;
             border: none;
             border-radius: 0;
@@ -540,8 +531,16 @@ section {
 
 #visitGH {
                                      text-align: center;
-                                     margin-top: 0.7em;
+                                     margin-top: 0.8em;
                                      font-style: italic;
+}
+#GH{
+    font-size: 1em;
+    padding: 0;
+    
+}
+#GH:hover{
+    color: #ec78e3;
 }
     
 
