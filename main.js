@@ -55,13 +55,13 @@ function consoleText(words, id, colors, speed) {
   }, 400);
 }
 
-function myFunction() {
+/* function myFunction() {
   var x = document.getElementById("navigation");
   if (x.className === "nav") {
     x.className += " responsive";
   } else {
     x.className = "nav";
   }
-}
+} */
 
 
