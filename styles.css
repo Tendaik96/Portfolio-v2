@@ -366,8 +366,8 @@ CAROUSEL
     
     }
 
-.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -380%;}
-.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -278%; }
+.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -375%;}
+.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -275%; }
 .carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -170%; }
 .carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -70%; }
 .carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 27%; }
@@ -378,12 +378,26 @@ CAROUSEL
 .carousel>input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) { box-shadow: 0px 0px 0px 5px violet; }
 .carousel>input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 5px violet; }
 
-    @media screen and (max-width: 990px) {
+ #MyPortfolio-container,
+ #codecademy-container {
+     display: flex;
+     flex-direction: column;
+     width: 50vw;
+     text-align: center;
+     align-items: center;
+ }
+
+ #MyPortfolio-description,
+ #TeaCozy-description {
+     width: 730px;
+ }
+
+   /*  @media screen and (max-width: 990px) {
 .carousel>input:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {margin-left: -375%;}
  
-    }
+    } */
 
-    #cinemate, #gem, #dictionary{
+    #cinemate, #gem, #dictionary, #portfolio, #tea{
         height: 60vh;
        
     }
@@ -391,23 +405,20 @@ CAROUSEL
         #cinemate-pic, #dictionary-pic, #gem-pic{
             height: 60vh;
             padding-top: 10px;
-            padding-bottom: 20px;
+            padding-bottom: 10px;
         }
     
     #cinemate-container, #gem-container, #dictionary-container {
         display: flex;
         flex-direction: row;
         align-items: center;
-        max-width: 50vw;
-        
-       
-        
+        width: 50vw; 
+        gap: 10px;  
     }
 
-    #cinemate-description, #gem-description, #dictionary-description{
-        max-width: 480px;
-        
-        margin-left: 10px;
+    #cinemate-description, #gem-description, #dictionary-description, {
+        max-width: 480px; 
+      
     }
 
     h5{
@@ -465,78 +476,17 @@ CAROUSEL
                font-size: 95%;
         }
 
-        #MyPortfolio {
-                       width: 40%;
+        #MyPortfolio, #TeaCozy{
+                       width: 700px;
                        height: auto;
                        border: none;
                        border-radius: 0;
-                       margin-bottom: 20px;
-                      
-                       
+             
         }
 
-        #MyPortfolio-container,  #codecademy-container{
-           display: flex; 
-           flex-direction: row;
-          
-           text-align: center;
-            align-items: center;
-        }
-
-        #MyPortfolio-description{
-            max-width: 300px;
-            margin-left: 20px;
-        }
-
-           
-
-        #TeaCozy{
-        max-width: 40%;
-            height: auto;
-            border: none;
-            border-radius: 0;
-            margin-bottom: 20px;
-        }
-        #TeaCozy-description{
-            max-width: 300px;
-            min-width: 200px;
-            margin-left: 10px;
-            text-align: center;
-            
-        }
-
-@media screen and (max-width:1240px){
-    
-    #MyPortfolio-container, #codecademy-container  {
-        display: flex;
-        flex-direction: column;
        
-    }   
 
-        #MyPortfolio-description, #TeaCozy-description {
-            max-width: 70%;
-            margin: 0 auto;
-            
-        }
-
-        #portfolio-heading, #cozy-heading{
-            text-align: center;
-        }
-
-    #TeaCozy, #MyPortfolio{
-           max-width: 70%;
-        }
-
-    
-    
-    .carousel>input:nth-of-type(4):checked~.carousel__slides .carousel__slide:first-of-type {
-            margin-left: -300%;
-        }
-
-        .carousel>input:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {
-            margin-left: -400%;
-        }
-}
+        
 
 @media screen and (max-width:900px) {
 
@@ -546,7 +496,11 @@ CAROUSEL
             flex-direction: column;
             align-items: center;
             gap: 10px;
-            margin-top: -80px;
+            margin-top: -55px;
+        }
+
+        #cinemate, #gem, #dictionary, #portfolio, #tea {
+            height: 60vh;
         }
 
 
@@ -559,42 +513,38 @@ CAROUSEL
         }
 
         #MyPortfolio, #TeaCozy{
-            width: 60%;
-            
+            width: 550px;
+        }
+
+        #MyPortfolio-description, #TeaCozy-description {
+            width: 570px;
         }
 
 
 }
+ 
+@media screen and (max-width:600px){
+    #MyPortfolio, #TeaCozy {
+        width: 450px;
+    }
 
-@media screen and (max-width:800px){
-.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -408%;}
-.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -300%; }
-.carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -177%; }
-.carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -77%; }
-.carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 23%; }
-}
-
-@media screen and (max-width:700px) {
-   .carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -400%;}
-.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -300%; }
-.carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -181%; }
-.carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -81%; }
-.carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 19%; } 
-}
-
-@media screen and (max-width:600px) {
-
-.carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -187%; }
-.carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -86%; }
-.carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 14%; }  
+    #MyPortfolio-description, #TeaCozy-description {
+            width: 500px;
+    }
 }
 
 @media screen and (max-width:530px) {
 
-.carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -193%; }
-.carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -93%; }
-.carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 8%; }  
+    #MyPortfolio,
+    #TeaCozy {
+        width: 310px;
+    }
+
+    #MyPortfolio-description, #TeaCozy-description {
+            width: 300px;
+    }
 }
+
 
 @media screen and (max-width:470px) {
 
@@ -606,6 +556,14 @@ CAROUSEL
             height: 40vh;
              
         }
+                #cinemate,
+                #gem,
+                #dictionary,
+                #portfolio,
+                #tea {
+                    height: 50vh;
+        
+                }
 
 
 }
@@ -621,12 +579,11 @@ CAROUSEL
              
         }
 
-
 }
 
 .carousel__slides {
     position: relative;
-    z-index: -1;
+   
     margin: 0 0 50px 0;
     white-space: nowrap;
     display: flex;
