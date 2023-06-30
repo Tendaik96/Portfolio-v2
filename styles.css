@@ -424,8 +424,7 @@ CAROUSEL
 
         #cinemate-pic, #dictionary-pic, #gem-pic{
             height: 60vh;
-            padding-top: 10px;
-            padding-bottom: 10px;
+            
         }
     
     #cinemate-container, #gem-container, #dictionary-container {
@@ -443,7 +442,7 @@ CAROUSEL
 
     h5{
     font-size: 1.8em;
-    
+    margin-bottom: 10px;
     }
 
     button {
@@ -603,9 +602,7 @@ CAROUSEL
                     height: 50vh;
         
                 }
-#hero-main-container{
-    margin-left: 10px;
-}
+
 
 }
 
@@ -686,7 +683,7 @@ label .slide-nav-pic {
     width: 45vw;
     display: flex;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 70px auto;
 
     li {
         flex: 1 1 auto;
@@ -721,7 +718,7 @@ label .slide-nav-pic {
 
                                
         } */
-
+ 
 #visitGH {
                                      text-align: center;
                                      margin-top: 0.8em;
