@@ -58,7 +58,7 @@ header{
 
 @media screen and (max-width: 450px){
     #logo{
-        font-size: 28px;
+        font-size: 30px;
     }
 }
 
@@ -111,7 +111,7 @@ nav>a:hover {
     #menu-icon {
         display: initial;
         color: whitesmoke;
-        font-size: 5em; 
+        font-size: 4em; 
     }
     
     #header{
@@ -378,6 +378,32 @@ CAROUSEL
 .carousel>input:nth-of-type(4):checked ~ .carousel__thumbnails li:nth-of-type(4) { box-shadow: 0px 0px 0px 5px violet; }
 .carousel>input:nth-of-type(5):checked ~ .carousel__thumbnails li:nth-of-type(5) { box-shadow: 0px 0px 0px 5px violet; }
 
+@media screen and (max-width: 680px){
+.carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -180%; }
+.carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -80%; }
+.carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 21%; }
+}
+
+@media screen and (max-width: 615px){
+.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -382%;}
+.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -280%; }
+.carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -185%; }
+.carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -85%; }
+.carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 15%; }
+
+
+#gem-container {
+    margin-right: 340px;
+}
+}
+
+@media screen and (max-width: 540px){
+
+}
+
+
+
+
  #MyPortfolio-container,
  #codecademy-container {
      display: flex;
@@ -392,14 +418,8 @@ CAROUSEL
      width: 730px;
  }
 
-   /*  @media screen and (max-width: 990px) {
-.carousel>input:nth-of-type(5):checked~.carousel__slides .carousel__slide:first-of-type {margin-left: -375%;}
- 
-    } */
-
     #cinemate, #gem, #dictionary, #portfolio, #tea{
         height: 60vh;
-       
     }
 
         #cinemate-pic, #dictionary-pic, #gem-pic{
@@ -413,7 +433,7 @@ CAROUSEL
         flex-direction: row;
         align-items: center;
         width: 50vw; 
-        gap: 10px;  
+        gap: 20px;  
     }
 
     #cinemate-description, #gem-description, #dictionary-description, {
@@ -531,6 +551,15 @@ CAROUSEL
     #MyPortfolio-description, #TeaCozy-description {
             width: 500px;
     }
+
+    .carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -385%;}
+    .carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -285%; }
+}
+
+@media screen and (max-width:550px) {
+    .carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -388%;}
+    .carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -290%; }
+
 }
 
 @media screen and (max-width:530px) {
@@ -545,9 +574,19 @@ CAROUSEL
     }
 }
 
+@media screen and (max-width:500px) {
+    .carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -395%;}
+    .carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -295%; }
+    .carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -192%; }
+    .carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -92%; }
+    .carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 8%; }
+  
+}
+
 
 @media screen and (max-width:470px) {
-
+ .carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -400%;}
+.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -300%; }  
 .carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -192%; }
 .carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -92%; }
 .carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 8%; } 
@@ -564,21 +603,50 @@ CAROUSEL
                     height: 50vh;
         
                 }
+#hero-main-container{
+    margin-left: 10px;
+}
 
+}
+
+@media screen and (max-width:430px){
+.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -408%;}
+.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -309%; }  
+ 
 
 }
 
 @media screen and (max-width:380px) {
-
+.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -415%;}
+.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -315%; }  
 .carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -192%; }
 .carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -92%; }
 .carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 8%; } 
 
 #cinemate-pic, #dictionary-pic, #gem-pic{
-            height: 30vh;
-             
+            height: 30vh;  
         }
+}
 
+@media screen and (max-width:360px) {
+.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -425%;}
+.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -325%; }  
+.carousel>input:nth-of-type(3):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -195%; }
+.carousel>input:nth-of-type(2):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -98%; }
+.carousel>input:nth-of-type(1):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: 3%; } 
+
+
+ #cinemate-container,
+ #gem-container,
+ #dictionary-container {
+  
+     gap: 5px;
+ }
+}
+
+@media screen and (max-width:360px) {
+.carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -428%;}
+.carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -328%; }  
 }
 
 .carousel__slides {
