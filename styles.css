@@ -283,6 +283,7 @@ ABOUT
     font-style: italic;
     text-decoration: underline;
     font-size: 0.9em;
+    padding: 0;
 }
 
 #small-bitmoji{
@@ -515,7 +516,7 @@ CAROUSEL
             flex-direction: column;
             align-items: center;
             gap: 10px;
-            margin-top: -55px;
+            margin-top: -45px;
         }
 
         #cinemate, #gem, #dictionary, #portfolio, #tea {
@@ -718,7 +719,41 @@ label .slide-nav-pic {
 
                                
         } */
- 
+      
+        .hover {
+            position: relative;
+            height: auto;
+            width: auto;
+            
+        }
+
+    .img__description {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: linear-gradient(rgba(128, 128, 128, 0.9), rgb(128, 128, 128), rgba(128, 128, 128, 0.9));
+        color: #fff;
+        visibility: hidden;
+        opacity: 0;
+        border-radius: 50px;
+        /* transition effect. not necessary */
+        transition: opacity .2s, visibility .2s;
+        text-align: center;
+        padding: 50px;
+        font-weight: bold;
+}
+
+.hover:hover .img__description {
+    visibility: visible;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+      
+
 #visitGH {
                                      text-align: center;
                                      margin-top: 0.8em;
