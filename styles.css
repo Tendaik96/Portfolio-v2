@@ -97,9 +97,12 @@ nav>a:hover {
 
 }
 
-#menu-icon{
+#menu-icon, #cross{
     display: none;
+    margin-bottom: 30px;
 }
+
+
 
 @media screen and (max-width: 990px) {
     a {   
@@ -108,23 +111,53 @@ nav>a:hover {
 }
 
 @media screen and (max-width: 900px) {
-    #menu-icon {
-        display: initial;
+    #menu-icon{
+        display: block;
         color: whitesmoke;
-        font-size: 4em; 
-    }
-    
-    #header{
-        justify-content: space-between;
+        font-size: 4rem;
+        margin-top: 30px;
         
     }
-    nav>a {
+
+    #cross {
+        display: initial;
+        color: rgba(253, 5, 67, 0.5);
+        font-size: 4rem; 
+    }
+  
+    nav {
             display: none;
+            background-color: whitesmoke;
+            height: auto;
+            align-self: start;
+            position: absolute;
+            width: 100%;
+            padding-top: 20px;
+            justify-content: space-between;
+             
         }
 
-    nav>a:not(:last-child) {
-                    font-size: 1.5em;
+        nav:not(:first-child){
+            font-size: 1.8rem;
         }
+
+        nav>a {
+            /* display: none; */
+        width: 100%;
+        border-bottom: 2px solid rgb(219, 219, 219);
+        text-align: center;
+        }
+
+                #CV-img {
+                    width: 110px;
+                    height: 70px;
+                    border-radius: 25px;
+                    padding: 0;
+                    margin: 0;
+        
+                }
+
+    
 
 
 }
@@ -185,7 +218,7 @@ HERO
     justify-content: space-between;
     align-items: center;
     padding-left: 5vw;
-    margin-top: 30px;
+    padding-top: 30px;
 }
 
 #logo-container{
@@ -554,6 +587,7 @@ CAROUSEL
 
     .carousel>input:nth-of-type(5):checked ~ .carousel__slides .carousel__slide:first-of-type {margin-left: -385%;}
     .carousel>input:nth-of-type(4):checked ~ .carousel__slides .carousel__slide:first-of-type { margin-left: -285%; }
+
 }
 
 @media screen and (max-width:550px) {
@@ -701,24 +735,6 @@ label .slide-nav-pic {
 }
 
 @media screen and (max-width:750px) {}
-
-   /*      @media(max-width:750px){
-            .carousel__slides {
-                   padding-left: 0;
-            
-            }
-
-            #MyPortfolio-container {
-                            display: flex;
-                            flex-direction: column;
-                            justify-content: center;
-                            margin-top: 30vh;
-                            text-align: center;
-            
-            }
-
-                               
-        } */
       
         .hover {
             position: relative;

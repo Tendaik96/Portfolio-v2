@@ -55,13 +55,35 @@ function consoleText(words, id, colors, speed) {
   }, 400);
 }
 
-/* function myFunction() {
-  var x = document.getElementById("navigation");
-  if (x.className === "nav") {
-    x.className += " responsive";
+let nav = document.getElementById("navigation");
+let menuIcon = document.getElementById("menu-icon");
+let crossIcon = document.getElementById('cross');
+let header = document.getElementById('header');
+
+function openMenu() {
+  console.log('click')
+
+  if (nav.style.display === 'none') {
+    nav.style.display = 'flex';
+    nav.style.flexDirection = 'column'
+    header.style.paddingLeft = '0px'
   } else {
-    x.className = "nav";
+  nav.style.display = "none";
   }
-} */
+} 
+
+function closeMenu() {
+  console.log("click");
+
+  if (nav.style.display === "flex") {
+    nav.style.display = "none";
+  }
+}
+
+
+
+menuIcon.addEventListener('click', openMenu)
+crossIcon.addEventListener('click', closeMenu)
+
 
 
