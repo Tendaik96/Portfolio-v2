@@ -63,13 +63,10 @@ let header = document.getElementById('header');
 function openMenu() {
   console.log('click')
 
-  if (nav.style.display === 'none') {
     nav.style.display = 'flex';
     nav.style.flexDirection = 'column'
     header.style.paddingLeft = '0px'
-  } else {
-  nav.style.display = "none";
-  }
+
 } 
 
 function closeMenu() {
