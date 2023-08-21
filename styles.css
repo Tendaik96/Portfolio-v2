@@ -207,8 +207,12 @@ HERO
     }
 }
 
-#bitmoji {
-    height: 70vh;
+#myPortrait {
+    max-height: 70vh;
+    width: 80%;
+    border-radius: 180px;
+    margin-right: 50px;
+    margin-top: 10%;
 }
 
 #hero-main-container{
@@ -239,7 +243,6 @@ i{
 
 .hero-icon{
     color: #ec78e3;
-
 }
 
 .hero-icon:hover {
@@ -262,7 +265,7 @@ i{
 }
 
 @media screen and (max-width:800px){
-    #bitmoji{
+    #myPortrait{
         display: none;
     }
 
@@ -319,7 +322,7 @@ ABOUT
     padding: 0;
 }
 
-#small-bitmoji{
+#small-portrait{
     display: none;
 }
 
@@ -328,10 +331,11 @@ ABOUT
 @media screen and (max-width: 800px) {
     
 
-    #small-bitmoji {
+    #small-portrait {
         display: initial;
-        width: 30vh;
+        width: 70%;
         margin-bottom: 2vh;
+        border-radius: 50px;
 
     }
 
@@ -549,7 +553,7 @@ CAROUSEL
             flex-direction: column;
             align-items: center;
             gap: 10px;
-            margin-top: -40px;
+            
         }
 
         #cinemate, #gem, #dictionary, #portfolio, #tea {
